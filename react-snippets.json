@@ -1,0 +1,34 @@
+{
+	"Basic react class component (TypeScript)": {
+		"scope": "typescriptreact",
+		"prefix": "react-class-component-ts",
+		"body": [
+			"import React from \"react\";",
+			"",
+			"interface State { }",
+			"",
+			"export class $1 extends React.Component {",
+			"  public state: State;",
+			"",
+			"  public constructor(props: any) {",
+			"    super(props);",
+			"",
+			"    this.state = {};",
+			"  }",
+			"",
+			"  public render() {",
+			"    return (",
+			"      <div className=\"$2\"></div>",
+			"    );",
+			"  }",
+			"}"
+		]
+	},
+	"Bind this to event handler method": {
+		"scope": "typescriptreact,javascriptreact",
+		"prefix": "react-bind-this",
+		"body": [
+			"this.$1 = this.$1.bind(this);",
+		]
+	}
+}
